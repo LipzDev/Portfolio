@@ -1,0 +1,443 @@
+@import "reset";
+@import "fonte";
+@import "mixin";
+
+
+.header{
+    width: 100%;
+    padding: 10px 0;
+    position: fixed;
+    z-index: 9999; 
+    
+
+    img{
+        width: 90px;
+        transition: 0.5s;
+    }
+
+    .header-flex{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.menu{
+    ul{
+        display: flex;
+    }
+
+    li+li{
+        margin-left: 40px;
+    } 
+    
+    a{
+        font-size: $font2;
+        color: $branco1;
+        transition: 0.5s;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .menu{
+        display: none;
+    }  
+}
+
+@media screen and (min-width: 900px){
+    .icone{
+        display: none;
+    }   
+}
+
+// MENU EFEITO
+
+.menu-movel{
+    background: rgba(0, 0, 0, 0.623);  
+    
+    img{
+        width: 100px;
+        transition: 0.5s;
+    }
+}
+
+
+// BACKGROUND
+
+.background{
+    background-image: url(../img/bg-1.jpg);
+    width: 100%;
+    height: 120vh;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .bg-text{
+        position: relative;
+        top: -12%;
+        text-align: center;
+        filter: blur(10px);
+        
+
+        h1{
+            @include titulo-text;
+            color: white;
+            font-size: 8.0rem;   
+            border: 1px solid rgb(255, 255, 255);     
+            padding: 20px;    
+            filter: drop-shadow(1px 1px 5px white);
+        }
+
+        p{
+            color: white;
+            font-size: 5.0rem;
+            text-transform: uppercase;
+            letter-spacing: 8px;
+            filter: drop-shadow(1px 1px 5px white);
+        }
+    }
+}
+
+.overlay{     
+    position: absolute;
+    bottom: -5rem;
+    left: 0;
+    width: 100%;   
+}
+
+// QUEM SOU
+
+.description{  
+   img{
+       min-width: 500px;
+       z-index: 999;
+   }
+
+   .description-flex{
+       display: flex;
+       justify-content: space-between;
+       flex-wrap: wrap;
+   }
+}
+
+.box-text{
+    width: 500px;
+    height: 500px;
+    text-align: center;
+    z-index: 999;
+    position: relative;
+    top: -10rem;
+    padding: 0 30px;
+    box-shadow: 2px 2px 7px #2d4ddb2c;
+
+    h2{
+        @include titulo-text;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    p{
+        @include paragrafo-text;
+    }
+}
+
+// CURRICULO
+
+.curriculo{
+    background-color: $branco2;
+    width: 100%;
+    height: auto;
+
+    overflow: hidden;
+    position: relative;  
+
+    .container{
+        display: flex;
+        height: auto;
+        align-items: center;
+        justify-content: center; 
+    }
+
+    .overlay2{      
+        img{
+            max-width: 35%;
+            position: absolute;
+            right: -20rem;
+            top: 10%;
+        }
+    }
+
+    .overlay3{      
+        img{
+            max-width: 28%;
+            position: absolute;
+            left: -13rem;
+            top: 10%;
+        }
+    }
+}
+
+.download-curriculo{
+    text-align: center;
+    max-width: 450px; 
+    h3{
+        @include titulo-text;               
+    }
+
+    p{
+        @include paragrafo-text;
+    }
+
+    button{
+        @include button;
+        margin-bottom: 100px;
+        
+        a{
+            color: white;
+        }
+    }
+}
+
+// PROJETOS
+
+.projetos{
+    width: 100%;
+    height: auto;
+    text-align: center;
+
+    h4{
+        @include titulo-text;        
+    }   
+}
+
+.galeria-projetos{          
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+
+    .imgs-projetos{
+        position: relative;
+       
+        img{
+            max-width: 30%;
+            margin: 10px;            
+        }        
+    }
+}
+
+// TECNOLOGIAS
+
+.tecnologias{   
+    height: auto;
+    width: 100%;
+    background-color: $branco2;
+
+    h5{
+        text-align: center;
+        @include titulo-text;
+        padding-top: 100px;
+    }
+
+    .tecnologias-flex{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 100px;
+    }
+}
+
+.skills{
+    width: 50%;
+
+    h2{
+        color: $cinza1;
+        font-size: $font2;
+        margin: 15px 0;
+    }
+}
+
+.barra-1{
+    @include barra;
+    width: 90%;
+}
+
+.barra-2{
+    @include barra;
+    width: 85%;
+}
+
+.barra-3{
+    @include barra;
+    width: 70%;
+}
+
+.barra-4{
+    @include barra;
+    width: 50%;
+}
+
+.barra-5{
+    @include barra;
+    width: 60%;
+}
+
+.barra-6{
+    @include barra;
+    width: 30%;
+}
+
+.work img{
+    max-width: 100%;
+}
+
+// CONTATO
+
+.contato{
+    background-image: url(../img/bg-1.jpg);
+    width: 100%;   
+    height: 40vh;   
+    background-position: bottom;
+    background-size: cover;    
+    background-attachment: fixed;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h6{
+        @include titulo-text;
+        color: white;
+        filter: drop-shadow(1px 1px 5px white);        
+    }
+}
+
+// FORMULARIO
+
+.formulario{
+    width: 100%;
+    height: auto;
+}
+
+.formulario-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.form{
+    margin-top: 60px;
+
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+    input{
+        padding: 20px 10px;
+        border: 0;
+        background-color: $branco2;
+
+
+        /* Cor de fundo do autocomplete */
+        input:-webkit-autofill {
+            -webkit-box-shadow: 0 0 0 30px $branco2 inset;
+        }
+
+        /* Cor do texto do autocomplete */
+        input:-webkit-autofill {
+            -webkit-text-fill-color: rgb(59, 59, 59) !important;
+        }
+    }
+
+    input+input{
+        margin-top: 10px;
+    }
+
+    textarea{
+        padding: 30px 10px 0;
+        border: 0;
+        background-color: $branco2;
+        resize: none;
+        height: 200px;
+        margin-top: 10px;
+    }
+
+    button{
+        border: 0;
+        padding: 10px 0;        
+        cursor: pointer;      
+        color: white;
+        font-size: $font2;
+        margin: 0;
+        letter-spacing: 3px;
+        font-weight: 500;
+        background: linear-gradient(45deg, #0d2dbb , #2d4ddb);
+    }
+}
+
+
+.redes-sociais{
+    background-color: $branco2;
+    width: 40%;
+    height: 200px;    
+    margin-top: 60px;
+    padding: 20px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    h1{
+        @include titulo-text;
+        margin-top: 0px;
+        margin-bottom: 30px;
+    }
+
+    p{
+        @include paragrafo-text;
+        margin-bottom: 50px;
+    }
+
+    i{
+        font-size: $font4;
+        color: black;
+    }
+
+    a+a{
+        margin-left: 20px;
+    }
+}
+
+// FOOTER
+
+.footer{
+    background-image: url(../img/footer2.svg);
+    width: 100%;
+    height: 400px;
+    margin-top: 45px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    
+    a{
+        color: $cinza1;
+        font-weight: 400;
+        font-size: $font2;
+        position: relative;
+        top: 10rem;
+    }
+}
+
+@import "responsive";

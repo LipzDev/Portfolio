@@ -1,0 +1,400 @@
+@media screen and (max-width: 980px){
+    .background{
+        background-image: url(../img/bg/bg-mobile2.png);
+        width: 100%;
+        height: 960px;
+    }
+
+    .um{
+        background-color: #212121;
+    }
+    
+    .dois{
+        background-color: #212121;
+    }
+    
+    .tres{
+        background-color: #212121;
+    }
+
+    .icon-x .um{
+        background-color: white; 
+    }
+    
+    .icon-x .dois{
+        background-color: white; 
+    }
+    
+    .icon-x .tres{
+        background-color: white;   
+    }
+
+    /* CLASSES DO SITE */
+    
+    .background-item{
+        flex-direction: column;
+    }
+
+    .bg-text{
+        margin-top: 150px;
+    }
+
+    .bg-text h1{
+        font-size: 4.0rem;
+    }
+
+    .bg-text p{
+        font-size: 1.5rem;
+    }
+
+    .bg-mobile img{
+        max-width: 300px;
+        margin-top: 40px;
+    }
+
+    /* SEO */
+
+    .texto1 h2{
+        font-size: 4.0rem;
+        margin-top: 80px;
+    }
+
+    .texto1 p{
+        font-size: 1.5rem;
+    }
+
+    .seo-itens{
+        flex-direction: column;
+    }
+
+    .img1 img{
+        max-width: 100%;
+        margin-top: 50px;
+    }
+
+    /* CLEAN CODE */
+
+    .clean-code-itens{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .img2 img{
+        max-width: 80%;
+        margin-top: 50px;
+    }
+
+    .texto2 h3{
+        font-size: 4.0rem;
+    }
+
+    .texto2{
+        order: -1;
+    }
+    
+    .texto2{        
+        padding: 0;
+    }
+
+    .texto2 p{
+        font-size: 1.5rem;
+    }
+
+    /* LISTA */
+
+    .lista-bg{
+        text-align: center;
+    }
+
+    .lista-bg h4{
+        font-size: 2.1rem;
+        color: white;
+        margin: 20px 0;
+        padding: 10px;
+        border: 4px solid white;
+    }
+
+    .lista-bg{
+        height: 200px;
+    }
+
+    .lista-itens input{
+        width: 270px;
+    }
+
+    /* PROJETOS */
+
+    .projetos{       
+        height: auto;
+    }
+
+    .projeto-itens{
+        flex-wrap: wrap;
+    }
+
+    .projeto-box{
+        max-width: 350px;
+        min-height: 270px;
+        margin: 40px 0;
+    }
+
+    .projeto-chamada h2{
+        margin-top: 90px;
+    }
+
+    /* MODAL RESPONSIVE */
+
+    .enabled{
+        top: 0;
+        left: 0;
+    }
+    
+    .enabled img{
+        width: 98%;
+    }
+
+    /* ICONE DE FECHAR */
+
+    .enabled i{          
+        right: 8px;
+        top: 37.2%;
+        font-size: 3.0rem;
+    }
+
+    /* FORMULÁRIO */
+
+    .contato{
+        height: auto;
+        padding: 60px 0;
+    }
+
+    .grid-estrutura{
+        display: grid;
+        grid-gap: 50px;
+        grid-template-areas:
+        "titulo-form"
+        "form"
+        "local"
+        "mapa";
+    
+        grid-template-columns: 1fr;
+        grid-template-rows: 140px 1fr auto 200px;   
+    }
+
+    .titulo-form{
+        font-size: 4.0rem;
+    }
+    
+    .titulo-form h5{
+        margin-top: 60px;
+        padding: 20px;
+    }
+
+    .localizacao a{
+        padding: 10px 10px;
+    }     
+}
+
+@media screen and (width: 768px) and (height: 1024px){
+    .background{
+        background-image: url(../img/bg/bg-tablet2.png);
+        height: 80vh;
+    }
+
+    .background-item{
+        flex-direction: row;
+    }
+
+    .bg-text h1{
+        font-size: 5.0rem;
+    }
+
+    .bg-text p{
+        font-size: 1.8rem;
+    }
+
+    /* LISTA */
+
+    .lista-bg{
+        text-align: center;
+    }
+
+    .lista-bg h4{
+        font-size: 3.0rem;        
+    }
+
+    /* PROJETOS */
+
+    .projeto-box{
+        max-width: 300px;        
+    }
+
+    /* MODAL RESPONSIVE */
+
+    .enabled{
+        top: 0;
+        left: 0;
+    }
+    
+    .enabled img{
+        width: 98%;
+    }
+
+    /* ICONE DE FECHAR */
+
+    .enabled i{          
+        right: 15px;
+        top: 32.5%;
+    } 
+
+    /* FORMULARIO */
+
+    .local-itens{       
+        margin: 15px 30px;        
+    }
+    
+}
+
+@media screen and (width: 1024px) and (height: 1366px){
+    .background{
+        background-image: url(../img/bg/bg-ipad.png);
+        height: 80vh;
+    }
+
+    .background-item{
+        flex-direction: row;
+    }
+
+    .bg-text h1{
+        font-size: 4.0rem;
+    }
+
+    .bg-text p{
+        font-size: 2.5rem;
+    }
+
+    .menu-desktop{
+        display: inline;
+    }
+
+    .menu-desktop a{
+        font-weight: bold;
+    }
+
+    /* SEO */
+
+    .texto1 h2{
+        font-size: 4.0rem;
+    }
+
+    .texto1 p{
+        font-size: 2.5rem;
+        max-width: 100%;
+    }
+
+    .seo-itens{
+        flex-direction: column;
+    }
+
+    .img1 img{
+        max-width: 100%;
+        margin-top: 70px;
+    }
+
+    /* CLEAN CODE */
+
+    .clean-code{        
+        height: 60vh;       
+    }
+
+    .img2{
+        padding-right: 80px;
+    }
+
+    .img2 img{
+        max-width: 400px;
+        margin-top: 0;        
+    }
+
+    .texto2 h3{
+        font-size: 4.0rem;
+    }
+
+    .texto2{
+        padding: 0;
+    }
+    
+    .texto2 p{
+        font-size: 2.5rem; 
+    }
+
+    /* LISTA */
+
+    .lista h4{
+        text-align: center;
+        font-size: 4.0rem; 
+        max-width: 820px;       
+    }
+
+    .lista-bg{
+        height: 400px;
+    }
+
+    .lista-itens input{
+        width: 470px;
+        height: 50px;
+        font-size: 2.5rem;
+    }
+
+    .lista-itens input[type="submit"]{
+        width: 130px;
+        height: 62px;        
+    }
+
+    /* PROJETOS */
+    .projetos{        
+        height: 50vh;
+        margin: 90px 0;
+        align-items: initial;
+        justify-content: initial;
+    }
+
+    .projeto-itens{
+        flex-wrap: wrap;
+    }
+
+    .projeto-box{
+        max-width: 400px;        
+    }
+
+    .projeto-box p{
+        font-size: 1.8rem;
+    }
+
+    /* MODAL RESPONSIVE */
+
+    .enabled{
+        top: 0;
+        left: 0;
+    }
+    
+    .enabled img{
+        width: 98%;
+    }
+
+    /* ICONE DE FECHAR */
+
+    .enabled i{          
+        right: 18px;
+        top: 32.4%;
+    }
+
+    /* LOCALIZAÇÃO */
+
+    .local-itens{       
+        margin: 10px;
+        font-size: 1.8rem;
+        color: #ffffff;
+    }
+}
+
