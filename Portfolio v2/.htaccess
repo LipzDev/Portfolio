@@ -1,0 +1,17 @@
+DirectoryIndex index.php index.html index.htm index2.html
+
+ErrorDocument 400 https://infinityfree.net/errors/400/
+
+ErrorDocument 401 https://infinityfree.net/errors/401/
+
+ErrorDocument 403 https://infinityfree.net/errors/403/
+
+ErrorDocument 404 https://infinityfree.net/errors/404/
+
+ErrorDocument 500 https://infinityfree.net/errors/500/
+
+ErrorDocument 503 https://infinityfree.net/errors/503/
+
+RewriteEngine On
+RewriteCond %{HTTP:X-Forwarded-Proto} =http
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
