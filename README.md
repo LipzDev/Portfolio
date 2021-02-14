@@ -16,6 +16,7 @@
 
 
 ##  Site 02 - Segunda versão do meu portfólio [VERSÃO ATUAL] <a name="id02"></a>
+[Link](http://filipe-dev.epizy.com/)
 [Site 02 - Código](https://github.com/LipzDev/Portfolio/tree/main/Portfolio%20v2)
 
 ![Site 02](https://github.com/LipzDev/Portfolio/blob/main/Portfolio%20v2/layout4.png)
