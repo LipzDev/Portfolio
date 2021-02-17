@@ -1,0 +1,11 @@
+@mixin boxShadow{
+   box-shadow:  3px 3px 6px var(--cor-sombra-1),
+   inset -2px -2px 8px var(--cor-sombra-2);
+}
+
+@mixin  button{
+   background: var(--cor-secundaria);
+   width: 200px;
+   height: 50px;
+   transform: skew(-30deg);
+}

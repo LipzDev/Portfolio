@@ -9,13 +9,25 @@
    vertical-align: middle;
 }
 
+:root{
+   --cor-primaria: #1D1D1D;
+   --cor-secundaria: #EBE3C6;
+   --cor-terciaria: #FFFFFF;
+
+   --cor-fonte-1: #555555;
+   --cor-fonte-2: #f8f8f8;
+
+   --cor-sombra-1: rgb(196, 196, 196);
+   --cor-sombra-2: rgb(255, 255, 255);
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
-  background: #212121;
+  background: var(--cor-primaria);
 }
 
 .container--w1{
-   max-width: 1200px;
+   max-width: 1300px;
    margin: 0 auto;
    width: 95%;
 }
@@ -27,7 +39,7 @@ body {
 }
 
 .container--w3{
-   max-width: 1600px;
+   max-width: 1200px;
    margin: 0 auto;
    width: 95%;
 }
