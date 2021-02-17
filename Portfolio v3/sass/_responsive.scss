@@ -1,0 +1,202 @@
+// IPAD PRO RESOLUTION
+@media screen and (max-width: 900px){
+  .menu-desktop{
+      display: none;
+   }
+
+   .icon{
+      cursor: pointer;
+      z-index: 9999;
+      width: 45px;
+      height: 45px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      border-radius: 50%;
+      @include boxShadow;   
+
+      .b-1{
+         width: 30px;
+         height: 2px;
+         background: var(--cor-primaria);
+         transition: 0.4s;
+      }
+
+      .b-2{
+         width: 30px;
+         height: 2px;
+         background: var(--cor-primaria);
+
+         margin: 5px  0;
+         transition: 0.4s;
+      }
+
+      .b-3{
+         width: 30px;
+         height: 2px;
+         background: var(--cor-primaria);
+         transition: 0.4s;
+      }
+   }
+
+   .active-icon-x{
+      .b-1{
+         transform: rotate(45deg) translate(4px, 4px);
+      }
+
+      .b-2{
+         opacity: 0;
+      }
+
+      .b-3{
+         transform: rotate(-45deg) translate(6px, -6px);
+      }
+   }
+
+   // LIGHT MODE ICON
+
+   .light--mode{
+      width: 45px;
+      height: 45px;
+
+      position: absolute;
+      right: 80px;
+   }
+
+   // MENU MOBILE STYLES
+
+   .menu-mobile{
+      background: var(--cor-secundaria);
+      width: 50%;
+      height: 100vh;
+      padding: 0 40px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      position: absolute;
+      left: -200rem;
+      top: 0;
+      z-index: 9999;
+
+      opacity: 0;
+      visibility: hidden;
+      transition: 0.4s;
+
+      &.active-menu-mobile{
+         opacity: 1;
+         visibility: visible;
+         left: 0;
+      }
+
+      li+li{
+         margin-top: 50px;
+      }
+
+      a{
+         font-size: 1.8em;
+         color: var(--cor-primaria);
+      }
+   }
+
+   // BG
+
+   .bg{
+      height: auto;
+      padding: 50px 0;
+   }
+
+   .bg--content{
+      flex-direction: column;
+      justify-content: center;
+   }
+
+   .bg-text{
+      p{
+         font-size: 1.8em;
+      }
+
+      h1{
+         font-size: 2.3em;
+      }
+   }
+
+   // FORM
+
+   .form{
+      top: 5rem;
+   }
+
+}
+
+// MOBILE
+
+@media screen and (max-width: 500px){
+   .bg-logomarca{
+      display: none;
+   }
+
+   .logo{
+      p{
+         font-size: 1.7em;
+      }
+   }   
+
+   // BG
+   .bg{
+      height: auto;
+   }
+
+   .bg--content{
+      height: auto;
+
+      display: flex;
+      align-items: initial;
+      justify-content: initial;
+      flex-direction: column;
+   }
+
+   .bg-text{
+      text-align: center;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      .button{
+         width: 150px;
+      }
+
+      a{
+         padding: 20px 40px!important;
+      }
+
+      i{
+         position: absolute;
+         left: 130px;
+      }
+   }
+
+   // FORMULARIO
+
+   .form{
+      width: 100%;
+   }
+
+   .formulario{
+      width: 100%;
+
+      input{
+         width: 100%;
+      }
+
+      textarea{
+         width: 100%;
+      }
+   }
+}

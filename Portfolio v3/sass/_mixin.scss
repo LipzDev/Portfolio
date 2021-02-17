@@ -5,7 +5,9 @@
 
 @mixin  button{
    background: var(--cor-secundaria);
-   width: 200px;
+   width: 170px;
    height: 50px;
    transform: skew(-30deg);
+   text-transform: uppercase;
+   letter-spacing: 1px;
 }

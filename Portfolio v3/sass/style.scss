@@ -1,11 +1,9 @@
 @import 'reset';
-@import 'typography';
 @import 'mixin';
 
 // STYLES //
 
 // HEADER
-
 .header{
    background: var(--cor-terciaria);
    padding: 20px 0;
@@ -15,23 +13,21 @@
 .header--content{
    display: flex;
    align-items: center;
-   justify-content: flex-end;
-
-   position: relative;
+   justify-content: space-between;
 }
 
 .menu-desktop ul{
    display: flex;
 
    position: relative;
-   right: 160px;
+   right: -100px;
 
    li+li{
       margin-left: 40px;
    }
 
    a{
-     font-size: 1.6em; 
+     font-size: 1.2em; 
      color: var(--cor-fonte-1);
    }
 }
@@ -39,27 +35,35 @@
 // LOGOMARCA
 
 .logo{
+   z-index: 4;
+   
+   p{
+      font-size: 3.0em;
+      font-weight: 600;
+      color: var(--cor-fonte-1);   
+   }
+}
+
+.bg-logomarca{
    background: var(--cor-secundaria);
    width: 36.6%;
+   min-width: 330px;
    height: 115px;
    transform: skew(50deg);
 
    position: absolute;
    left: -70px;
    top: 0;
-
-   display: flex;
-   align-items: center;
-   justify-content: flex-end;
    z-index: 2;
+}
 
-   p{
-      font-size: 3.0em;
-      font-weight: 600;
-      color: var(--cor-fonte-1);
-      transform: skew(-50deg);
-      position: absolute;
-      right: 190px;
+@media screen and (min-width: 900px){
+   .icon{
+      display: none;
+   }
+
+   .menu-mobile{
+      display: none;
    }
 }
 
@@ -96,9 +100,11 @@
 .bg::after{
    content: '';
    position: absolute;
+   top: 0;
+   left: 0;
 
-   background: linear-gradient(180deg, rgb(46, 46, 46), rgb(10, 10, 10));
-   opacity: 0.8;
+   background: var(--cor-degrade);
+   opacity: 0.9;
    width: 100%;
    height: 100%;
 
@@ -106,18 +112,18 @@
 }
 
 .bg--content{
-   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   height: 70vh;
 }
 
 .bg-text{
-   position: absolute;
-   left: 0;
-   top: 200px;
    color: var(--cor-fonte-2);
    z-index: 2;
 
    p{
-      font-size: 3.0em;
+      font-size: 2.3em;
       font-weight: 300;
    }
 
@@ -129,6 +135,7 @@
    
    .button{
       margin-top: 50px;
+      margin-left: 20px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -140,14 +147,138 @@
          transform: skew(30deg);
          color: var(--cor-fonte-1);
          padding: 20px 60px;
+         font-weight: 600;
+         font-size: 0.9em;
       }
 
       i{
          position: absolute;
-         right: 30px;
-         top: 25px;
+         right: 37px;
+         top: 24px;
          color: var(--cor-fonte-1);
       }
+   }
+}
+
+// FORMULARIO
+
+.form{
+   padding: 40px;
+   backdrop-filter: blur(7px);
+   background: var(--cor-glass);
+   z-index: 999;
+   box-shadow: 2px 2px 8px rgba(15, 15, 15, 0.795);
+   position: relative;
+   top: 14rem;
+
+   h2{
+      font-weight: 300;
+      color: var(--cor-fonte-2);
+
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+
+      position: relative;
+      top: -20px;
+   }
+}
+
+.formulario{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   width: 350px;   
+
+   input{
+      width: 90%;
+      padding: 20px;
+      font-size: 0.9em;
+      margin-bottom: 20px;
+      background-color: transparent;
+      border: none;
+      border-bottom: 1px solid var(--cor-secundaria);
+      font-family: 'open sans', sans-serif;
+      color: var(--cor-fonte-2);
+   }
+
+   ::-webkit-input-placeholder {
+      color: var(--cor-fonte-2);
+   }
+
+   textarea{
+      width: 90%;
+      margin-top: 20px;
+      padding:  0 20px;
+      height: 80px;
+      font-size: 0.9em;
+      background-color: transparent;
+      border: none;
+      border: 1px solid var(--cor-secundaria);
+      border-top: none;
+      resize: none;
+      color: var(--cor-fonte-2);
+      font-family: 'open sans', sans-serif;
+   }
+
+   .buttonForm{
+      @include button;
+      border: 0;  
+      cursor: pointer;
+      margin-top: 40px; 
+      font-size: 0.9em;
+
+      a{
+        display:block;
+        font-weight: 600;
+        transform: skew(30deg);
+        color: var(--cor-fonte-1); 
+        font-family: 'open sans', sans-serif;
+      } 
+
+      i{
+         margin-left: 7px;
+         position: relative;
+         top: -2px;
+      }
+   }
+}
+
+// MENU NAVIGATION
+
+.menu-navigation{
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   z-index: 999;
+
+   position: absolute;
+   right: 45px;
+   top: 25rem;
+
+   button{
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      border: 0;
+      background: var(--cor-secundaria); 
+   }
+
+   button{
+      margin-bottom: 40px;
+      position: relative;
+      cursor: pointer;
+   }
+
+   button::after{
+      content: '';
+      position: absolute;
+      left: 5px;
+
+      width: 2px;
+      height: 50px;
+      background: var(--cor-secundaria); 
    }
 }
 
