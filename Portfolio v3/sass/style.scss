@@ -77,7 +77,7 @@
    justify-content: center;
    border-radius: 50%;
    font-size: 1.5em;
-   @include boxShadow;   
+   @include boxShadowClaro-1;   
    cursor: pointer;
    color: var(--cor-fonte-1);
 }
@@ -251,10 +251,10 @@
 // MENU NAVIGATION
 
 .menu-navigation{
+   z-index: 9999!important;
    display: flex;
    align-items: center;
    flex-direction: column;
-   z-index: 999;
 
    position: fixed;
    right: 35px;
@@ -332,6 +332,16 @@
    }
 }
 
+// TECNOLOGIAS
+
+.tecnologias{
+   background: rgb(59, 59, 59);
+   width: 100%;
+   height: 100vh;  
+   position: relative;
+   z-index: 0;
+}
+
 // PROJETOS
 
 .projects{
@@ -342,7 +352,6 @@
 
    position: relative;
    bottom: 20rem;
-   z-index: 9999;
 
    text-align: center;
 
@@ -362,7 +371,7 @@
    grid-template-columns: 1fr 1fr 1fr;
 }
 
-.item{
+.item-grid-1{
    border-radius: 10px;
    overflow: hidden;
    position: relative;
@@ -378,10 +387,10 @@
       transform: scale(1.1);
    }
 
-   @include boxShadowEscuro;
+   @include boxShadowClaro-2;
 }
 
-.item::after{
+.item-grid-1::after{
    content: "Preview";
    font-size: 1.8em;
    color: rgba(204, 204, 204, 0.445);
@@ -403,17 +412,44 @@
    transition: 1s;
 }
 
-.item:hover::after{
+.item-grid-1:hover::after{
    left: 0rem; 
 }
 
+// TECNOLOGIAS ESTILO
 
-// TECNOLOGIAS
+.tecnologias-content{
+   h4{
+      position: absolute;
+      top: -6rem;
 
-.tecnologias{
-   background: rgb(59, 59, 59);
-   width: 100%;
-   height: 100vh;
+      letter-spacing: 2px;
+      font-weight: 300;
+      font-size: 1.5em;
+      color: var(--cor-fonte-2);
+   }
+}
+
+.tecnologias--grid{
+   display: grid;
+   justify-self: center;
+   grid-gap: 40px;
+   grid-template-columns: repeat(6, 1fr);
+
+   position: absolute;
+   bottom: 20%;
+}
+
+.icon-tecnologia{
+   background: transparent;
+   @include boxShadowEscuro-1;
+   width: 200px;
+   height: 200px;
+   border-radius: 10px;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
 
 // FOOTER
