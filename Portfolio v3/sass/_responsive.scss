@@ -1,5 +1,43 @@
-// IPAD PRO RESOLUTION
+@media screen and (max-width: 1500px){
+   .menu-navigation{
+      display: none;
+   }
+}
+
+@media screen and (max-width: 1024px){  
+   // SOBRE
+
+   .sobre--content{
+      margin-bottom: 38rem;
+   }
+
+   // PROJECTS
+
+   .container--w3{
+      margin: 0 auto;
+   }   
+   
+   .projects{
+      bottom: 30rem;
+   }
+
+   .projects--grid{
+      display: grid;
+   
+      grid-gap: 40px;
+      grid-template-columns: 1fr 1fr;
+   }
+   
+}
+
+// TABLET RESOLUTION
 @media screen and (max-width: 900px){
+   .header{
+      position: fixed;
+      width: 100%;  
+      z-index: 9999;
+   }
+
   .menu-desktop{
       display: none;
    }
@@ -19,14 +57,14 @@
       @include boxShadow;   
 
       .b-1{
-         width: 30px;
+         width: 25px;
          height: 2px;
          background: var(--cor-primaria);
          transition: 0.4s;
       }
 
       .b-2{
-         width: 30px;
+         width: 25px;
          height: 2px;
          background: var(--cor-primaria);
 
@@ -35,7 +73,7 @@
       }
 
       .b-3{
-         width: 30px;
+         width: 25px;
          height: 2px;
          background: var(--cor-primaria);
          transition: 0.4s;
@@ -69,6 +107,7 @@
    // MENU MOBILE STYLES
 
    .menu-mobile{
+      z-index: 9999;
       background: var(--cor-secundaria);
       width: 50%;
       height: 100vh;
@@ -81,7 +120,6 @@
       position: absolute;
       left: -200rem;
       top: 0;
-      z-index: 9999;
 
       opacity: 0;
       visibility: hidden;
@@ -107,7 +145,7 @@
 
    .bg{
       height: auto;
-      padding: 50px 0;
+      padding: 120px 0;
    }
 
    .bg--content{
@@ -116,6 +154,9 @@
    }
 
    .bg-text{
+      position: relative;
+      top: 60px;
+
       p{
          font-size: 1.8em;
       }
@@ -125,10 +166,41 @@
       }
    }
 
+   .button{
+      position: relative;
+      left: -10px;
+   }
+
    // FORM
 
    .form{
-      top: 5rem;
+      top: 10rem;
+   }
+
+   // SOBRE
+
+   .sobre--content{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 33rem;
+   }
+   
+   .sobre-img{
+      position: relative; 
+      margin-bottom: 50px;
+   }   
+
+   // PROJECTS
+
+   .container--w3{
+      margin: 0 auto;
+   }   
+   
+   .projects{
+      position: relative;
+      bottom: 26rem;
+      z-index: 555;
    }
 
 }
@@ -136,6 +208,20 @@
 // MOBILE
 
 @media screen and (max-width: 500px){
+   .container--w2{
+      max-width: 300px;
+   }
+
+   // MENU MOBILE
+   .menu-mobile{
+      width: 60%;
+
+      a{
+         font-size: 1.3em;
+      }
+   }
+
+   // LOGO
    .bg-logomarca{
       display: none;
    }
@@ -161,6 +247,8 @@
    }
 
    .bg-text{
+      top: 40px;
+
       text-align: center;
 
       display: flex;
@@ -198,5 +286,45 @@
       textarea{
          width: 100%;
       }
+   }
+
+   // SOBRE
+
+   
+   .sobre--content{
+      margin-bottom: 35rem;
+   }
+
+   .sobre-text{
+      max-width: 100%;
+
+      p{
+         font-size: 1.2em;
+      }
+   }
+
+   // PROJETOS
+
+   .projects{
+      bottom: 29rem;
+      height: auto;
+      padding: 50px 0;
+
+      h3{
+         padding: 0;
+         padding-bottom: 50px;
+      }
+   }
+
+   .projects--grid{
+      grid-gap: 0px;
+      grid-template-columns: 1fr;
+      grid-row-gap: 20px;
+   }   
+
+   // TECNOLOGIAS
+
+   .tecnologias{
+      height: auto;
    }
 }

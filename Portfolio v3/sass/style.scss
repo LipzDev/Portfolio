@@ -166,13 +166,15 @@
    padding: 40px;
    backdrop-filter: blur(7px);
    background: var(--cor-glass);
-   z-index: 999;
    box-shadow: 2px 2px 8px rgba(15, 15, 15, 0.795);
+   border-radius: 10px;
    position: relative;
    top: 14rem;
+   z-index: 222;
 
    h2{
       font-weight: 300;
+      letter-spacing: 2px;
       color: var(--cor-fonte-2);
 
       display: flex;
@@ -181,6 +183,7 @@
 
       position: relative;
       top: -20px;
+
    }
 }
 
@@ -253,9 +256,9 @@
    flex-direction: column;
    z-index: 999;
 
-   position: absolute;
-   right: 45px;
-   top: 25rem;
+   position: fixed;
+   right: 35px;
+   top: 38%;
 
    button{
       width: 12px;
@@ -269,6 +272,7 @@
       margin-bottom: 40px;
       position: relative;
       cursor: pointer;
+      z-index: 6;
    }
 
    button::after{
@@ -280,6 +284,145 @@
       height: 50px;
       background: var(--cor-secundaria); 
    }
+
+   .actived{
+      box-shadow: -2px -3px 12px var(--cor-secundaria),
+      2px 3px 12px var(--cor-secundaria);
+   }
 }
+
+// SOBRE
+
+.sobre--content{
+   display: flex;
+   justify-content: space-between;
+
+   margin-top: 140px;
+   margin-bottom: 29rem;
+}
+
+.sobre-img{
+   position: relative;
+
+   img{
+      border-radius: 10px;
+   }
+}
+
+.sobre-img::after{
+   content: '';
+   position: absolute;
+   background: var(--cor-degrade2);
+   left: 0;
+   top: 0;
+
+   width: 100%;
+   height: 100%;
+
+   border-radius: 10px;
+}
+
+.sobre-text{
+   max-width: 60%;
+
+   p{
+      font-size: 1.5em;
+      color: var(--cor-fonte-2);
+      font-weight: 300;
+   }
+}
+
+// PROJETOS
+
+.projects{
+   background: rgb(255, 255, 255);
+   width: 100%;
+   height: auto;
+   padding-bottom: 140px;
+
+   position: relative;
+   bottom: 20rem;
+   z-index: 9999;
+
+   text-align: center;
+
+   h3{
+      padding: 60px 0;
+      letter-spacing: 2px;
+      font-weight: 400;
+      font-size: 1.5em;
+      color: var(--cor-fonte-1);
+   }
+}
+
+.projects--grid{
+   display: grid;
+
+   grid-gap: 40px;
+   grid-template-columns: 1fr 1fr 1fr;
+}
+
+.item{
+   border-radius: 10px;
+   overflow: hidden;
+   position: relative;
+   
+
+   img{
+      width: 100%;
+      border-radius: 10px;
+      transition: 0.5s;
+   }
+
+   img:hover{
+      transform: scale(1.1);
+   }
+
+   @include boxShadowEscuro;
+}
+
+.item::after{
+   content: "Preview";
+   font-size: 1.8em;
+   color: rgba(204, 204, 204, 0.445);
+
+   background: var(--cor-glass);
+   backdrop-filter: blur(3px);
+   position: absolute;
+   left: 0;
+   top: 0;
+
+   width: 100%;
+   height: 100%;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   left: -100rem;
+   transition: 1s;
+}
+
+.item:hover::after{
+   left: 0rem; 
+}
+
+
+// TECNOLOGIAS
+
+.tecnologias{
+   background: rgb(59, 59, 59);
+   width: 100%;
+   height: 100vh;
+}
+
+// FOOTER
+
+.footer{
+   width: 100%;
+   height: 40vh;
+   background: red;
+}
+
 
 @import 'responsive';
