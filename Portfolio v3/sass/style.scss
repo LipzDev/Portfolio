@@ -348,7 +348,7 @@
 // TECNOLOGIAS
 
 .tecnologias{
-   background: rgb(59, 59, 59);
+   background: var(--cor-quaternaria);
    width: 100%;
    height: auto;  
    position: relative;
@@ -358,7 +358,7 @@
 // PROJETOS
 
 .projects{
-   background: rgb(20, 20, 20);
+   background: var(--cor-quinaria);
    border-bottom-right-radius: 10px;
    border-top-right-radius: 10px;
    width: 100%;
@@ -406,7 +406,7 @@
 .item-grid-1::after{
    content: "Preview";
    font-size: 1.8em;
-   color: rgba(204, 204, 204, 0.445);
+   color: var(--cor-fonte-3);
 
    background: var(--cor-glass);
    backdrop-filter: blur(3px);
@@ -453,7 +453,7 @@
 
 .icon-tecnologia{
    background: transparent;
-   border: 1px solid rgb(90, 90, 90);
+   border: 1px solid var(--cor-fonte-3);
    width: 200px;
    height: 200px;
    border-radius: 5px;
@@ -468,8 +468,14 @@
 .footer{
    width: 100%;
    height: auto;
-   background: red;
+   background: var(--cor-quinaria);
    z-index: -1;
+   padding: 50px 0;
+   text-align: center;
+
+   a{
+      color: white;
+   }
 }
 
 

@@ -226,6 +226,10 @@
       }
    }
 
+   .sobre-img::after{
+      height: 85%;
+   }
+
    // PROJECTS
 
    .container--w3{
@@ -362,6 +366,10 @@
 
    .sobre-img{
       margin-bottom: 50px;
+   }
+
+   .sobre-img::after{
+      height: 100%;
    }
 
    .sobre-text{
