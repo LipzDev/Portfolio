@@ -166,7 +166,7 @@
    padding: 40px;
    backdrop-filter: blur(7px);
    background: var(--cor-glass);
-   box-shadow: 2px 2px 8px rgba(15, 15, 15, 0.795);
+   box-shadow: 2px 2px 8px var(--cor-sombra-7);
    border-radius: 5px;
    position: relative;
    top: 14rem;
@@ -433,7 +433,7 @@
 
 .tecnologias-content{
    position: relative;
-   bottom: 12.5rem;
+   bottom: 13.5rem;
 
    h4{
       letter-spacing: 2px;
@@ -467,8 +467,9 @@
 
 .footer{
    width: 100%;
-   height: 40vh;
+   height: auto;
    background: red;
+   z-index: -1;
 }
 
 
