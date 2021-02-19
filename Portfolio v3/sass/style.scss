@@ -350,7 +350,7 @@
 .tecnologias{
    background: rgb(59, 59, 59);
    width: 100%;
-   height: 100vh;  
+   height: auto;  
    position: relative;
    z-index: 0;
 }
@@ -432,10 +432,10 @@
 // TECNOLOGIAS ESTILO
 
 .tecnologias-content{
-   h4{
-      position: absolute;
-      top: -6rem;
+   position: relative;
+   bottom: 12.5rem;
 
+   h4{
       letter-spacing: 2px;
       font-weight: 300;
       font-size: 1.5em;
@@ -443,20 +443,17 @@
    }
 }
 
-.tecnologias--grid{
-   display: grid;
-   justify-self: center;
-   grid-gap: 40px;
-   grid-template-columns: repeat(6, 1fr);
-
-   position: absolute;
-   bottom: 20%;
+.tecnologias--flex{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+   margin-top: 50px;
 }
 
 .icon-tecnologia{
    background: transparent;
    border: 1px solid rgb(90, 90, 90);
-   // @include boxShadowEscuro-1;
    width: 200px;
    height: 200px;
    border-radius: 5px;

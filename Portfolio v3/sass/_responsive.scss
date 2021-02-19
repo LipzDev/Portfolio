@@ -1,6 +1,8 @@
 @media screen and (max-width: 1500px){
-   .menu-navigation{
-      display: none;
+   // FORM
+
+   .form{
+      top: 10rem;
    }
 }
 
@@ -8,8 +10,12 @@
 @media screen and (max-width: 1024px){  
    // SOBRE
 
+   .sobre{
+      height: auto;
+   }
+
    .sobre--content{
-      margin-bottom: 38rem;
+      margin-bottom: 40rem;
    }
 
    // PROJECTS
@@ -19,7 +25,7 @@
    }   
    
    .projects{
-      bottom: 30rem;     
+      top: -32rem;     
       border-radius: 5px;
    }
 
@@ -32,21 +38,22 @@
 
    // TECNOLOGIAS
 
-   .tecnologias-content{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      h4{
-         position: absolute;
-         top: -6rem;
-         left: -8rem;   
-      }
+   .tecnologias{
+      height: 110vh;
    }
 
-   .tecnologias--grid{
-      grid-template-columns: repeat(3, 1fr);
-      bottom: 12%;
+   .tecnologias-content{
+      bottom: 26rem;
+   }
+
+   .icon-tecnologia{      
+      width: 300px;
+      height: 300px;  
+      margin-bottom: 40px;   
+      
+      img{
+         width: 80%;
+      }
    }
    
    
