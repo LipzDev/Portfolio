@@ -3,14 +3,15 @@
    2px 2px 5px var(--cor-sombra-2);
 }
 
-@mixin boxShadowClaro-2{
-   box-shadow:  -2px -2px 6px var(--cor-sombra-3),
+@mixin boxShadowEscuro-1{
+   box-shadow:  2px 5px 6px var(--cor-sombra-3),
    4px 4px 6px var(--cor-sombra-4);
 }
 
-@mixin boxShadowEscuro-1{
-   box-shadow:  2px 5px 6px var(--cor-sombra-5),
-   4px 4px 6px var(--cor-sombra-6);
+@mixin boxShadowEscuro-2{
+   box-shadow:  4px 4px 8px var(--cor-sombra-5),
+   -4px -4px 8px var(--cor-sombra-6);
+   border-radius: 5px;
 }
 
 @mixin  button{
