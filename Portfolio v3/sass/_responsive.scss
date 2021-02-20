@@ -1,4 +1,8 @@
 @media screen and (max-width: 1500px){
+   .menu-navigation{
+      display: none;
+   }
+
    // FORM
 
    .form{
@@ -409,7 +413,7 @@
    // TECNOLOGIAS
 
    .tecnologias{
-      height: 200vh;
+      height: 190vh;
    }
 
    .tecnologias-content{
@@ -431,6 +435,18 @@
    .footer{
       position: relative;
       height: auto;
+   }
+
+   .footer-flex{
+      flex-direction: column;
+   }
+
+   .item-list{
+      // margin-bottom: 50px;
+   }
+
+   .remove{
+      display: none;
    }
 
 }
@@ -473,6 +489,20 @@
    // TECNOLOGIAS
      .tecnologias{
       height: 155vh;
+   }
+}
+
+// TAMANHO DE CELULAR NO DESKTOP
+@media screen and (width: 500px) and (height: 927px){
+   // LIGHT MODE ICON
+
+      .light--mode{
+         right: 29%;
+      }
+   
+   // TECNOLOGIAS
+     .tecnologias{
+      height: 137vh;
    }
 }
 

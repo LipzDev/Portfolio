@@ -433,7 +433,7 @@
 
 .tecnologias-content{
    position: relative;
-   bottom: 13.5rem;
+   bottom: 12.5rem;
 
    h4{
       letter-spacing: 2px;
@@ -465,18 +465,65 @@
 
 // FOOTER
 
-.footer{
+.footer{   
    width: 100%;
    height: auto;
    background: var(--cor-quinaria);
+   padding-top: 20px;
    z-index: -1;
-   padding: 50px 0;
    text-align: center;
 
    a{
-      color: white;
+      color: var(--cor-fonte-2);
    }
 }
+
+
+.footer-flex{
+   display: flex; 
+   justify-content: space-between;
+   
+}
+
+.item-list{
+   padding-bottom: 20px;
+   
+   p{
+      letter-spacing: 2px;
+      font-weight: 300;
+      font-size: 1.5em;
+      text-transform: uppercase;
+      color: var(--cor-fonte-2);
+      margin-bottom: 35px;
+   }
+
+   img{
+      max-width: 130px;
+      display: flex;
+      padding: 20px;
+      border: 1px solid var(--cor-fonte-3);
+   }
+
+   h5{
+      letter-spacing: 2px;
+      font-weight: 300;
+      font-size: 1.5em;
+      text-transform: uppercase;
+      color: var(--cor-fonte-2);
+      margin-bottom: 30px;
+   }
+
+   li+li{
+      margin-top: 10px;
+   }
+}
+
+.creditos{
+   background: black;
+   width: 100%;
+  padding: 20px 0;
+}
+
 
 
 @import 'responsive';
