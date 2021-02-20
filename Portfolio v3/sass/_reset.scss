@@ -10,31 +10,6 @@
    box-sizing: border-box;
 }
 
-:root{
-   --cor-primaria: #1D1D1D;
-   --cor-secundaria: #EBE3C6;
-   --cor-terciaria: #ffffff;
-   --cor-quaternaria: rgb(59, 59, 59);
-   --cor-quinaria: rgb(20, 20, 20);
-
-   --cor-fonte-1: #555555;
-   --cor-fonte-2: #f8f8f8;
-   --cor-fonte-3: rgba(204, 204, 204, 0.445);
-
-   --cor-sombra-1: rgb(231, 231, 231);
-   --cor-sombra-2: rgb(212, 212, 212);   
-   --cor-sombra-3: rgb(36, 36, 36);
-   --cor-sombra-4: rgb(20, 20, 20);
-   --cor-sombra-5: rgb(0, 0, 0);
-   --cor-sombra-6: rgb(41, 41, 41);
-   --cor-sombra-7: rgba(15, 15, 15, 0.795);
-   
-   --cor-glass: #2020208f;
-   --cor-degrade: linear-gradient(180deg, rgba(51, 51, 51, 0.37), rgb(0, 0, 0));
-   
-   --cor-degrade2: linear-gradient(180deg, rgba(105, 105, 105, 0), rgb(26, 26, 26));
-}
-
 body {
   font-family: 'Open Sans', sans-serif;
   background: var(--cor-primaria);
@@ -50,9 +25,4 @@ body {
    max-width: 1200px;
    margin: 0 auto;
    width: 95%;
-}
-
-.container--w3{
-   max-width: 1650px;
-   width: 92%;
 }

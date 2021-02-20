@@ -1,7 +1,6 @@
 @import 'reset';
 @import 'mixin';
-
-// STYLES //
+@import 'colors';
 
 // HEADER
 .header{
@@ -169,7 +168,7 @@
    box-shadow: 2px 2px 8px var(--cor-sombra-7);
    border-radius: 5px;
    position: relative;
-   top: 14rem;
+   top: 13rem;
    z-index: 222;
 
    h2{
@@ -248,6 +247,12 @@
    }
 }
 
+.formulario{
+   input:focus{
+      border-bottom: 1px solid var(--cor-terciaria);
+   }
+}
+
 // MENU NAVIGATION
 
 .menu-navigation{
@@ -293,12 +298,18 @@
 
 // SOBRE
 
+.sobre{
+   width: 100%;
+   height: 60vh;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
 .sobre--content{
    display: flex;
    justify-content: space-between;
-
-   margin-top: 140px;
-   margin-bottom: 29rem;
 }
 
 .sobre-img{
@@ -341,50 +352,60 @@
       color: var(--cor-fonte-2);
       border-radius: 5px;
       @include boxShadowEscuro-2;
-   }
-   
-}
-
-// TECNOLOGIAS
-
-.tecnologias{
-   background: var(--cor-quaternaria);
-   width: 100%;
-   height: auto;  
-   position: relative;
-   z-index: 0;
+   }   
 }
 
 // PROJETOS
 
-.projects{
+.projetos-background{
+   display: flex;
+}
+
+.projetos-content{
    background: var(--cor-quinaria);
-   border-bottom-right-radius: 10px;
-   border-top-right-radius: 10px;
    width: 100%;
-   height: auto;
-   padding-bottom: 140px;
+   height: 70vh;
 
-   position: relative;
-   bottom: 20rem;
-
-   text-align: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
 
    h3{
-      padding: 60px 0;
       letter-spacing: 2px;
       font-weight: 400;
       font-size: 1.5em;
       color: var(--cor-fonte-2);
+      position: relative;
+      top: -40px;
    }
 }
 
-.projects--grid{
+// QUADRADOS ILUSAO DE OTICA
+
+.ilusao-de-otica-box{
+   width: 28%;
+}
+
+.fundo-ilusao-otica1{
+   height: 50%;
+   background: var(--cor-primaria);
+}
+
+.fundo-ilusao-otica2{
+   height: 50%;
+   background: var(--cor-quaternaria);
+}
+
+// FUNDO ABAIXO DAS IMAGENS
+
+.projetos-grid{
    display: grid;
 
    grid-gap: 40px;
    grid-template-columns: 1fr 1fr 1fr;
 }
+
+// EFEITO NAS IMAGENS DO PROJETO
 
 .item-grid-1{
    border-radius: 5px;
@@ -405,7 +426,8 @@
 
 .item-grid-1::after{
    content: "Preview";
-   font-size: 1.8em;
+   font-size: 1.5em;
+   font-weight: 300;
    color: var(--cor-fonte-3);
 
    background: var(--cor-glass);
@@ -429,18 +451,18 @@
    left: 0rem; 
 }
 
-// TECNOLOGIAS ESTILO
+// TECNOLOGIAS
 
-.tecnologias-content{
-   position: relative;
-   bottom: 12.5rem;
+.tecnologias{
+   width: 100%;
+   height: 60vh;
+   background: var(--cor-quaternaria);
 
-   h4{
-      letter-spacing: 2px;
-      font-weight: 300;
-      font-size: 1.5em;
-      color: var(--cor-fonte-2);
-   }
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   justify-content: center;
+  
 }
 
 .tecnologias--flex{
@@ -448,7 +470,17 @@
    justify-content: space-between;
    align-items: center;
    flex-wrap: wrap;
-   margin-top: 50px;
+   position: relative;
+
+   
+   h4{
+      letter-spacing: 2px;
+      font-weight: 300;
+      font-size: 1.5em;
+      color: var(--cor-fonte-2);
+      position: absolute;
+      top: -32%;
+   } 
 }
 
 .icon-tecnologia{
@@ -478,11 +510,9 @@
    }
 }
 
-
 .footer-flex{
    display: flex; 
    justify-content: space-between;
-   
 }
 
 .item-list{
@@ -501,6 +531,7 @@
       max-width: 130px;
       display: flex;
       padding: 20px;
+      border-radius: 5px;
       border: 1px solid var(--cor-fonte-3);
    }
 
@@ -519,11 +550,9 @@
 }
 
 .creditos{
-   background: black;
    width: 100%;
-  padding: 20px 0;
+   @include boxShadowEscuro-1;
+   padding: 20px 0;
 }
-
-
 
 @import 'responsive';
