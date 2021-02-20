@@ -1,14 +1,18 @@
 :root{
-   --cor-primaria: #1D1D1D;
-   --cor-secundaria: #EBE3C6;
-   --cor-terciaria: #ffffff;
-   --cor-quaternaria: rgb(59, 59, 59);
-   --cor-quinaria: rgb(20, 20, 20);
+   // CORES PRINCIPAIS
+   --cor--1: #1D1D1D;
+   --cor--2: #EBE3C6;
+   --cor--3: #ffffff;
+   --cor--4: rgb(59, 59, 59);
+   --cor--5: rgb(20, 20, 20);
+   --cor--6: rgb(0,0,0);
 
+   // CORES DAS FONTES
    --cor-fonte-1: #555555;
    --cor-fonte-2: #f8f8f8;
    --cor-fonte-3: rgba(204, 204, 204, 0.445);
 
+   // CORES PARA BOX-SHADOW
    --cor-sombra-1: rgb(231, 231, 231);
    --cor-sombra-2: rgb(212, 212, 212);   
    --cor-sombra-3: rgb(36, 36, 36);
@@ -17,8 +21,8 @@
    --cor-sombra-6: rgb(41, 41, 41);
    --cor-sombra-7: rgba(15, 15, 15, 0.795);
    
+   // EFEITOS ESPECIAIS
    --cor-glass: #2020208f;
-   --cor-degrade: linear-gradient(180deg, rgba(51, 51, 51, 0.37), rgb(0, 0, 0));
-   
+   --cor-degrade: linear-gradient(180deg, rgba(51, 51, 51, 0.37), rgb(0, 0, 0));   
    --cor-degrade2: linear-gradient(180deg, rgba(105, 105, 105, 0), rgb(26, 26, 26));
 }

@@ -4,7 +4,7 @@
 
 // HEADER
 .header{
-   background: var(--cor-terciaria);
+   background: var(--cor--3);
    padding: 20px 0;
    position: relative;
 }
@@ -44,7 +44,7 @@
 }
 
 .bg-logomarca{
-   background: var(--cor-secundaria);
+   background: var(--cor--2);
    width: 36.6%;
    min-width: 330px;
    height: 115px;
@@ -200,7 +200,7 @@
       margin-bottom: 20px;
       background-color: transparent;
       border: none;
-      border-bottom: 1px solid var(--cor-secundaria);
+      border-bottom: 1px solid var(--cor--2);
       font-family: 'open sans', sans-serif;
       color: var(--cor-fonte-2);
    }
@@ -217,7 +217,7 @@
       font-size: 0.9em;
       background-color: transparent;
       border: none;
-      border: 1px solid var(--cor-secundaria);
+      border: 1px solid var(--cor--2);
       border-top: none;
       resize: none;
       color: var(--cor-fonte-2);
@@ -249,7 +249,7 @@
 
 .formulario{
    input:focus{
-      border-bottom: 1px solid var(--cor-terciaria);
+      border-bottom: 1px solid var(--cor--3);
    }
 }
 
@@ -270,7 +270,7 @@
       height: 12px;
       border-radius: 50%;
       border: 0;
-      background: var(--cor-secundaria); 
+      background: var(--cor--2); 
    }
 
    button{
@@ -287,12 +287,12 @@
 
       width: 2px;
       height: 50px;
-      background: var(--cor-secundaria); 
+      background: var(--cor--2); 
    }
 
    .actived{
-      box-shadow: -2px -3px 12px var(--cor-secundaria),
-      2px 3px 12px var(--cor-secundaria);
+      box-shadow: -2px -3px 12px var(--cor--2),
+      2px 3px 12px var(--cor--2);
    }
 }
 
@@ -362,7 +362,7 @@
 }
 
 .projetos-content{
-   background: var(--cor-quinaria);
+   background: var(--cor--5);
    width: 100%;
    height: 70vh;
 
@@ -388,12 +388,12 @@
 
 .fundo-ilusao-otica1{
    height: 50%;
-   background: var(--cor-primaria);
+   background: var(--cor--1);
 }
 
 .fundo-ilusao-otica2{
    height: 50%;
-   background: var(--cor-quaternaria);
+   background: var(--cor--4);
 }
 
 // FUNDO ABAIXO DAS IMAGENS
@@ -456,7 +456,7 @@
 .tecnologias{
    width: 100%;
    height: 60vh;
-   background: var(--cor-quaternaria);
+   background: var(--cor--4);
 
    display: flex;
    align-items: center;
@@ -500,7 +500,7 @@
 .footer{   
    width: 100%;
    height: auto;
-   background: var(--cor-quinaria);
+   background: var(--cor--5);
    padding-top: 20px;
    z-index: -1;
    text-align: center;
@@ -550,8 +550,8 @@
 }
 
 .creditos{
+   background: var(--cor--6);
    width: 100%;
-   @include boxShadowEscuro-1;
    padding: 20px 0;
 }
 
