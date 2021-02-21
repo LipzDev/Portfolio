@@ -14,8 +14,4 @@ export default function initMenuNavigation(){
          sound.play();
       });
    });
-
-
-   console.log(window.innerHeight);
-   console.log(window.innerWidth);
 }

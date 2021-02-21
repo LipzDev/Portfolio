@@ -18,9 +18,6 @@
 .menu-desktop ul{
    display: flex;
 
-   position: relative;
-   right: -100px;
-
    li+li{
       margin-left: 40px;
    }
@@ -64,21 +61,6 @@
    .menu-mobile{
       display: none;
    }
-}
-
-// LIGHT MODE BUTTON
-
-.light--mode{
-   width: 60px;
-   height: 60px;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   border-radius: 50%;
-   font-size: 1.5em;
-   @include boxShadowClaro-1;   
-   cursor: pointer;
-   color: var(--cor-fonte-1);
 }
 
 // BG
@@ -250,6 +232,11 @@
 .formulario{
    input:focus{
       border-bottom: 1px solid var(--cor--3);
+   }
+
+   textarea:focus{
+      border: 1px solid var(--cor--3);
+      border-top: none;
    }
 }
 
@@ -502,7 +489,6 @@
    height: auto;
    background: var(--cor--5);
    padding-top: 20px;
-   z-index: -1;
    text-align: center;
 
    a{
@@ -553,6 +539,10 @@
    background: var(--cor--6);
    width: 100%;
    padding: 20px 0;
+
+   a{
+      font-size: 0.8em;
+   }
 }
 
 @import 'responsive';
