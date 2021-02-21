@@ -6,6 +6,9 @@
 .header{
    background: $cor--3;
    padding: 20px 0;
+   // position: fixed;
+   // width: 100%;
+   // z-index: 9999;
    position: relative;
 }
 
@@ -28,7 +31,7 @@
      transition: 0.4s;
 
      &:hover{
-      color: $cor-2;
+      color: $cor--2;
      }
    }
 }
@@ -46,7 +49,7 @@
 }
 
 .bg-logomarca{
-   background: $cor-2;
+   background: $cor--2;
    width: 36.6%;
    min-width: 330px;
    height: 115px;
@@ -236,11 +239,11 @@
 
 .formulario{
    input:focus{
-      border-bottom: 1px solid $cor--3;
+      border-bottom: 1px solid $cor--7;
    }
 
    textarea:focus{
-      border: 1px solid $cor--3;
+      border: 1px solid $cor--7;
       border-top: none;
    }
 }
@@ -257,34 +260,35 @@
    right: 35px;
    top: 38%;
 
-   button{
+   a{
       width: 12px;
       height: 12px;
       border-radius: 50%;
       border: 0;
       background: $cor--2; 
-   }
 
-   button{
       margin-bottom: 40px;
       position: relative;
       cursor: pointer;
-      z-index: 6;
    }
 
-   button::after{
+   a::after{
       content: '';
       position: absolute;
+      top: 2px;
       left: 5px;
 
       width: 2px;
       height: 50px;
       background: $cor--2; 
+      z-index: -1;
    }
 
    .actived{
-      box-shadow: -2px -3px 12px $cor--2,
-      2px 3px 12px $cor--2;
+     background: $cor--7;
+
+      box-shadow: -2px -3px 12px $cor--7,
+      2px 3px 12px $cor--7;
    }
 }
 
@@ -380,7 +384,7 @@
 
 .fundo-ilusao-otica1{
    height: 50%;
-   background: $cor-1;
+   background: $cor--1;
 }
 
 .fundo-ilusao-otica2{

@@ -83,14 +83,14 @@
       .b-1{
          width: 25px;
          height: 2px;
-         background: $cor-1;
+         background: $cor--1;
          transition: 0.4s;
       }
 
       .b-2{
          width: 25px;
          height: 2px;
-         background: $cor-1;
+         background: $cor--1;
 
          margin: 5px  0;
          transition: 0.4s;
@@ -99,7 +99,7 @@
       .b-3{
          width: 25px;
          height: 2px;
-         background: $cor-1;
+         background: $cor--1;
          transition: 0.4s;
       }
    }
@@ -122,7 +122,7 @@
 
    .menu-mobile{
       z-index: 9999;
-      background: $cor-2;
+      background: $cor--2;
       width: 50%;
       height: 100vh;
       padding: 0 40px;
@@ -151,7 +151,7 @@
 
       a{
          font-size: 1.8em;
-         color: $cor-1;
+         color: $cor--1;
       }
    }
 

@@ -1,5 +1,5 @@
 export default function initMenuNavigation(){
-   const menuNavigation = document.querySelectorAll('.menu-navigation button');
+   const menuNavigation = document.querySelectorAll('.menu-navigation a');
 
    menuNavigation.forEach((item) => {
       item.addEventListener('click', function(){
