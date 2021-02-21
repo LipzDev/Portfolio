@@ -4,7 +4,7 @@
 
 // HEADER
 .header{
-   background: var(--cor--3);
+   background: $cor--3;
    padding: 20px 0;
    position: relative;
 }
@@ -24,7 +24,12 @@
 
    a{
      font-size: 1.2em; 
-     color: var(--cor-fonte-1);
+     color: $cor-fonte-1;
+     transition: 0.4s;
+
+     &:hover{
+      color: $cor-2;
+     }
    }
 }
 
@@ -36,12 +41,12 @@
    p{
       font-size: 3.0em;
       font-weight: 600;
-      color: var(--cor-fonte-1);   
+      color: $cor-fonte-1;   
    }
 }
 
 .bg-logomarca{
-   background: var(--cor--2);
+   background: $cor-2;
    width: 36.6%;
    min-width: 330px;
    height: 115px;
@@ -84,7 +89,7 @@
    top: 0;
    left: 0;
 
-   background: var(--cor-degrade);
+   background: $cor-degrade;
    opacity: 0.9;
    width: 100%;
    height: 100%;
@@ -100,7 +105,7 @@
 }
 
 .bg-text{
-   color: var(--cor-fonte-2);
+   color: $cor-fonte-2;
    z-index: 2;
 
    p{
@@ -126,7 +131,7 @@
       
       a{
          transform: skew(30deg);
-         color: var(--cor-fonte-1);
+         color: $cor-fonte-1;
          padding: 20px 60px;
          font-weight: 600;
          font-size: 0.9em;
@@ -136,7 +141,7 @@
          position: absolute;
          right: 37px;
          top: 24px;
-         color: var(--cor-fonte-1);
+         color: $cor-fonte-1;
       }
    }
 }
@@ -146,8 +151,8 @@
 .form{
    padding: 40px;
    backdrop-filter: blur(7px);
-   background: var(--cor-glass);
-   box-shadow: 2px 2px 8px var(--cor-sombra-7);
+   background: $cor-glass;
+   box-shadow: 2px 2px 8px $cor-sombra-7;
    border-radius: 5px;
    position: relative;
    top: 13rem;
@@ -156,7 +161,7 @@
    h2{
       font-weight: 300;
       letter-spacing: 2px;
-      color: var(--cor-fonte-2);
+      color: $cor-fonte-2;
 
       display: flex;
       align-items: flex-end;
@@ -182,13 +187,13 @@
       margin-bottom: 20px;
       background-color: transparent;
       border: none;
-      border-bottom: 1px solid var(--cor--2);
+      border-bottom: 1px solid $cor--2;
       font-family: 'open sans', sans-serif;
-      color: var(--cor-fonte-2);
+      color: $cor-fonte-2;
    }
 
    ::-webkit-input-placeholder {
-      color: var(--cor-fonte-2);
+      color: $cor-fonte-2;
    }
 
    textarea{
@@ -199,10 +204,10 @@
       font-size: 0.9em;
       background-color: transparent;
       border: none;
-      border: 1px solid var(--cor--2);
+      border: 1px solid $cor--2;
       border-top: none;
       resize: none;
-      color: var(--cor-fonte-2);
+      color: $cor-fonte-2;
       font-family: 'open sans', sans-serif;
    }
 
@@ -217,7 +222,7 @@
         display:block;
         font-weight: 600;
         transform: skew(30deg);
-        color: var(--cor-fonte-1); 
+        color: $cor-fonte-1; 
         font-family: 'open sans', sans-serif;
       } 
 
@@ -231,11 +236,11 @@
 
 .formulario{
    input:focus{
-      border-bottom: 1px solid var(--cor--3);
+      border-bottom: 1px solid $cor--3;
    }
 
    textarea:focus{
-      border: 1px solid var(--cor--3);
+      border: 1px solid $cor--3;
       border-top: none;
    }
 }
@@ -257,7 +262,7 @@
       height: 12px;
       border-radius: 50%;
       border: 0;
-      background: var(--cor--2); 
+      background: $cor--2; 
    }
 
    button{
@@ -274,12 +279,12 @@
 
       width: 2px;
       height: 50px;
-      background: var(--cor--2); 
+      background: $cor--2; 
    }
 
    .actived{
-      box-shadow: -2px -3px 12px var(--cor--2),
-      2px 3px 12px var(--cor--2);
+      box-shadow: -2px -3px 12px $cor--2,
+      2px 3px 12px $cor--2;
    }
 }
 
@@ -310,7 +315,7 @@
 .sobre-img::after{
    content: '';
    position: absolute;
-   background: var(--cor-degrade2);
+   background: $cor-degrade2;
    left: 0;
    top: 0;
 
@@ -325,7 +330,7 @@
 
    p{
       font-size: 1.5em;
-      color: var(--cor-fonte-2);
+      color: $cor-fonte-2;
       font-weight: 300;
    }
 
@@ -336,7 +341,7 @@
       margin-top: 40px;
       letter-spacing: 1px;
       padding: 20px;
-      color: var(--cor-fonte-2);
+      color: $cor-fonte-2;
       border-radius: 5px;
       @include boxShadowEscuro-2;
    }   
@@ -349,7 +354,7 @@
 }
 
 .projetos-content{
-   background: var(--cor--5);
+   background: $cor--5;
    width: 100%;
    height: 70vh;
 
@@ -361,7 +366,7 @@
       letter-spacing: 2px;
       font-weight: 400;
       font-size: 1.5em;
-      color: var(--cor-fonte-2);
+      color: $cor-fonte-2;
       position: relative;
       top: -40px;
    }
@@ -375,12 +380,12 @@
 
 .fundo-ilusao-otica1{
    height: 50%;
-   background: var(--cor--1);
+   background: $cor-1;
 }
 
 .fundo-ilusao-otica2{
    height: 50%;
-   background: var(--cor--4);
+   background: $cor--4;
 }
 
 // FUNDO ABAIXO DAS IMAGENS
@@ -415,9 +420,9 @@
    content: "Preview";
    font-size: 1.5em;
    font-weight: 300;
-   color: var(--cor-fonte-3);
+   color: $cor-fonte-3;
 
-   background: var(--cor-glass);
+   background: $cor-glass;
    backdrop-filter: blur(3px);
    position: absolute;
    left: 0;
@@ -443,7 +448,7 @@
 .tecnologias{
    width: 100%;
    height: 60vh;
-   background: var(--cor--4);
+   background: $cor--4;
 
    display: flex;
    align-items: center;
@@ -464,7 +469,7 @@
       letter-spacing: 2px;
       font-weight: 300;
       font-size: 1.5em;
-      color: var(--cor-fonte-2);
+      color: $cor-fonte-2;
       position: absolute;
       top: -32%;
    } 
@@ -472,7 +477,7 @@
 
 .icon-tecnologia{
    background: transparent;
-   border: 1px solid var(--cor-fonte-3);
+   border: 1px solid $cor-fonte-3;
    width: 200px;
    height: 200px;
    border-radius: 5px;
@@ -487,12 +492,15 @@
 .footer{   
    width: 100%;
    height: auto;
-   background: var(--cor--5);
+   background:$cor--5;
    padding-top: 20px;
    text-align: center;
 
    a{
-      color: var(--cor-fonte-2);
+      color: $cor-fonte-2;
+      &:hover{
+         color: $cor-fonte-1;
+      }
    }
 }
 
@@ -509,7 +517,7 @@
       font-weight: 300;
       font-size: 1.5em;
       text-transform: uppercase;
-      color: var(--cor-fonte-2);
+      color: $cor-fonte-2;
       margin-bottom: 35px;
    }
 
@@ -518,7 +526,7 @@
       display: flex;
       padding: 20px;
       border-radius: 5px;
-      border: 1px solid var(--cor-fonte-3);
+      border: 1px solid $cor-fonte-3;
    }
 
    h5{
@@ -526,7 +534,7 @@
       font-weight: 300;
       font-size: 1.5em;
       text-transform: uppercase;
-      color: var(--cor-fonte-2);
+      color: $cor-fonte-2;
       margin-bottom: 30px;
    }
 
@@ -536,7 +544,7 @@
 }
 
 .creditos{
-   background: var(--cor--6);
+   background: $cor--6;
    width: 100%;
    padding: 20px 0;
 
