@@ -258,7 +258,7 @@
 
    position: fixed;
    right: 35px;
-   top: 38%;
+   top: 40%;
 
    a{
       width: 12px;
@@ -269,27 +269,38 @@
 
       margin-bottom: 40px;
       position: relative;
-      cursor: pointer;
+      cursor: pointer;      
    }
 
    a::after{
       content: '';
       position: absolute;
-      top: 2px;
+      bottom: 2px;
       left: 5px;
 
       width: 2px;
       height: 50px;
+      transition: 0.5s;
+      
       background: $cor--2; 
+
       z-index: -1;
    }
 
    .actived{
-     background: $cor--7;
+     background: $cor--2;
+      box-shadow: 2px 2px 8px $cor--2,
+      -2px -2px 12px $cor--2;     
+   } 
 
-      box-shadow: -2px -3px 12px $cor--7,
-      2px 3px 12px $cor--7;
+   .actived::after{
+      background: $cor--2;
    }
+
+   a:nth-child(1)::after{
+      display: none;
+   }
+
 }
 
 // SOBRE
@@ -497,7 +508,7 @@
    width: 100%;
    height: auto;
    background:$cor--5;
-   padding-top: 20px;
+   padding: 5rem 0;
    text-align: center;
 
    a{
@@ -543,7 +554,7 @@
    }
 
    li+li{
-      margin-top: 10px;
+      margin-top: 15px;
    }
 }
 
@@ -551,10 +562,13 @@
    background: $cor--6;
    width: 100%;
    padding: 20px 0;
+   text-align: center;
 
    a{
+      color: $cor-fonte-2;
       font-size: 0.8em;
    }
 }
+
 
 @import 'responsive';

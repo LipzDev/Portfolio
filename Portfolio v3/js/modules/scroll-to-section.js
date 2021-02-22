@@ -9,7 +9,7 @@ export default function initScrollToSection(){
       const section = document.querySelector(href);
       const topo = section.offsetTop;
       window.scrollTo({
-         top: topo - 250,
+         top: topo,
          behavior: "smooth",
       });
    }
@@ -24,3 +24,4 @@ export default function initScrollToSection(){
       item.addEventListener('click', scrollToSection);
    });
 }
+
