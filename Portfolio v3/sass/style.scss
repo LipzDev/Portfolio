@@ -139,6 +139,9 @@
          padding: 20px 60px;
          font-weight: 600;
          font-size: 0.9em;
+
+         position: relative;
+         left: -10px;
       }
 
       i{
@@ -591,6 +594,37 @@
    a{
       color: $cor-fonte-2;
       font-size: 0.8em;
+   }
+}
+
+// Whatsapp
+
+.whatsapp{   
+   a{
+      position: fixed;
+      right: 1%;
+      bottom: 2%;
+
+      color: white;
+      font-size: 2.0em;   
+      background: rgb(58, 141, 58);
+
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+
+   i{
+      transform: rotate(0);
+      transition: 0.5s ease-in-out;
+   }   
+
+   &:hover i{
+      transform: rotate(360deg);
    }
 }
 

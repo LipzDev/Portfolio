@@ -238,7 +238,7 @@
                <ul>
                   <li><a href="https://www.linkedin.com/in/lipzdev/" target="_blank">LinkedIn</a></li>
                   <li><a href="https://github.com/LipzDev" target="_blank">GitHub</a></li>
-                  <li><a href="tel:+5518996855200">WhatsApp</a></li>
+                  <li><a href="https://api.whatsapp.com/send/?phone=5518996855200&text=Olá Filipe Gomes... &app_absent=0">WhatsApp</a></li>
                   <li><a href="https://www.facebook.com/filipe.gomes.14019" target="_blank">Facebook</a></li>
                </ul>
             </div>
@@ -259,6 +259,10 @@
 
    <section class="creditos">
       <a href="https://github.com/LipzDev?tab=repositories">Todos os direitos reservados - LipzDEV</a>
+   </section>
+
+   <section class="whatsapp">
+      <a href="https://api.whatsapp.com/send/?phone=5518996855200&text=Olá Filipe Gomes... &app_absent=0"><i class="fab fa-whatsapp"></i></a>
    </section>
 
    <script type="module" src="js/script.js"></script>
