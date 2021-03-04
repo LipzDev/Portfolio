@@ -7,8 +7,8 @@
 ## Sumário
 
 * [Site 01 - Primeira versão](#id01)
-* [Site 02 - Segunda versão [VERSÃO ATUAL]](#id02)
-* [Site 03 - Terceira versão](#id03)
+* [Site 02 - Segunda versão](#id02)
+* [Site 03 - Terceira versão [VERSÃO ATUAL]](#id03)
 
 ##  Site 01 - Primeira versão do meu portfólio <a name="id01"></a>
 [Site 01 - Código](https://github.com/LipzDev/Portfolio/tree/main/Portfolio%20v1)
