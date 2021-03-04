@@ -1,4 +1,4 @@
-## 🏆 PORTFÓLIO VERSÃO ATUAL
+## 🏆 PORTFÓLIO
 
  ## Sobre
  
