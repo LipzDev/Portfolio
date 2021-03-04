@@ -215,7 +215,7 @@
                   <img src="img/icon/BOOTSTRAPicon.png" alt="Icone da linguagem BOOTSTRAP">
                </div>
 
-               <div class="icon-tecnologia" title="Figma - Aplicativo de criação de layouts">
+               <div class="icon-tecnologia" title="Figma - Programa de edição de imagens">
                   <img src="img/icon/FIGMAicon.png" alt="Icone da linguagem FIGMA">
                </div>  
 
