@@ -25,3 +25,20 @@
    letter-spacing: 1px;
 }
 
+// TOAST
+
+@mixin toast{
+   color: white;
+   font-size: 0.7em;
+   padding: 20px 0; 
+   
+   visibility: hidden;
+   opacity: 0;
+   transition: 0.5s ease-in-out;
+
+   position: absolute;
+   top: -10rem;
+   left: 0;
+   
+   width: 100%;
+}

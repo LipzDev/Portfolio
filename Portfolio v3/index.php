@@ -65,16 +65,30 @@
                      <a href="#sobre">Explorar<i class="fas fa-arrow-down"></i></a>
                   </div> 
                </div>
+              
 
-               <!-- FORMULARIO -->
-               <form action="" class="form">
+               <form class="form" method="post" action="formulario/formulario.php" autocomplete="off">
                   <h2>CONTATO</h2>
                   <div class="formulario">
-                     <input type="text" placeholder="Nome">
-                     <input type="email" placeholder="Email">
-                     <input type="text" placeholder="Assunto">
-                     <textarea resize="none" placeholder="Mensagem"></textarea>
-                     <button class="buttonForm"><a href="#" type="submit">ENVIAR <i class="fas fa-arrow-up"></i></a></button>
+                     <input type="text" placeholder="Nome*" name="nome" required>
+                     <input type="email" placeholder="Email*" name="email" required>
+                     <input type="text" placeholder="Assunto*" name="assunto" required>
+                     <textarea resize="none" placeholder="Mensagem*" name="mensagem" required></textarea>
+                     <button type="submit" class="buttonForm"><a>ENVIAR <i class="fas fa-arrow-up"></i></a></button>
+                  </div>
+
+                   <!-- FORMULARIO -->
+
+                  <div class="feedback">
+
+                     <div class="success">
+                        <p>Sua mensagem foi enviada com sucesso!</p>
+                     </div>
+
+                     <div class="error">
+                        <p>Erro ao enviar mensagem, tente novamente mais tarde!</p>
+                     </div>
+
                   </div>
                </form>
             </div>

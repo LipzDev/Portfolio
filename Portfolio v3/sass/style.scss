@@ -133,6 +133,7 @@
       @include button;
       
       a{
+         display: block;
          transform: skew(30deg);
          color: $cor-fonte-1;
          padding: 20px 60px;
@@ -149,10 +150,13 @@
    }
 }
 
+
+
 // FORMULARIO
 
 .form{
    padding: 40px;
+   overflow: hidden;
    backdrop-filter: blur(7px);
    background: $cor-glass;
    box-shadow: 2px 2px 8px $cor-sombra-7;
@@ -176,6 +180,26 @@
    }
 }
 
+// FEEDBACK DO FORMULARIO
+.feedback {
+   z-index: 9999;
+   width: 100%;
+
+   text-align: center;
+ 
+   .success p {
+     background-color: rgb(58, 141, 58);
+     @include toast;
+   }
+ 
+   .error p {
+     background-color: rgb(195, 23, 23);
+     @include toast;
+   }   
+ }
+
+//  ---
+
 .formulario{
    display: flex;
    align-items: center;
@@ -196,7 +220,7 @@
    }
 
    ::-webkit-input-placeholder {
-      color: $cor-fonte-2;
+      color: $cor-fonte-3;
    }
 
    textarea{
@@ -222,7 +246,7 @@
       font-size: 0.9em;
 
       a{
-        display:block;
+        display: block;
         font-weight: 600;
         transform: skew(30deg);
         color: $cor-fonte-1; 
