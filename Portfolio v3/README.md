@@ -7,4 +7,3 @@
  ###  Portfólio:
  [Link](http://filipe-dev.epizy.com/)
 
-![Site 03](https://github.com/LipzDev/Portfolio/blob/main/Portfolio%20v3/layout.png)
