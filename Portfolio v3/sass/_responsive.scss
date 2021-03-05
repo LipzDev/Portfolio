@@ -1,0 +1,461 @@
+@media screen and (max-width: 1500px){
+   .menu-navigation{
+      display: none;
+   }
+   
+   .form{
+      top: 5rem;
+   }
+
+   // Whatsapp
+
+   .whatsapp{   
+      a{
+         right: 1%;
+         bottom: 1.5%;
+         width: 50px;
+         height: 50px;
+         font-size: 1.5em; 
+      }
+   }
+}
+
+// TABLET GRANDE
+@media screen and (max-width: 1024px){  
+   // SOBRE
+
+   .sobre{
+      height: auto;
+   }
+
+   .sobre--content{
+      margin: 5rem 0;
+   }
+
+   // PROJECTS
+
+   .projetos-content{     
+      height: auto;
+      padding: 5rem 0;
+   }
+   
+   .ilusao-de-otica-box{
+      width: 10%;
+   }
+   
+   // TECNOLOGIAS
+
+   .tecnologias{
+      height: auto;
+      padding: 5rem 0;
+   }
+
+   .icon-tecnologia{      
+      width: 150px;
+      height: 150px;  
+      
+      img{
+         width: 80%;
+      }
+   }
+
+   .tecnologias--flex{
+      h4{
+         top: -38%;
+      } 
+   }
+   
+   // Whatsapp
+
+   .whatsapp{   
+      a{
+         right: 20px;
+         bottom: 20px;
+         right: 1%;
+         bottom: 1%;
+      }
+   }
+}
+
+// TABLET NORMAL
+@media screen and (max-width: 900px){
+   .header{
+      position: fixed;
+      width: 100%;  
+      z-index: 9999;
+   }
+
+  .menu-desktop{
+      display: none;
+   }
+
+   .icon{
+      cursor: pointer;
+      z-index: 9999;
+      width: 45px;
+      height: 45px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      border-radius: 50%;
+      @include boxShadowClaro-1;   
+
+      .b-1{
+         width: 25px;
+         height: 2px;
+         background: $cor--1;
+         transition: 0.4s;
+      }
+
+      .b-2{
+         width: 25px;
+         height: 2px;
+         background: $cor--1;
+
+         margin: 5px  0;
+         transition: 0.4s;
+      }
+
+      .b-3{
+         width: 25px;
+         height: 2px;
+         background: $cor--1;
+         transition: 0.4s;
+      }
+   }
+
+   .active-icon-x{
+      .b-1{
+         transform: rotate(45deg) translate(4px, 4px);
+      }
+
+      .b-2{
+         opacity: 0;
+      }
+
+      .b-3{
+         transform: rotate(-45deg) translate(6px, -6px);
+      }
+   }
+
+   // MENU MOBILE STYLES
+
+   .menu-mobile{
+      z-index: 9999;
+      background: $cor--2;
+      width: 50%;
+      height: 100vh;
+      padding: 0 40px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      position: absolute;
+      left: -200rem;
+      top: 0;
+
+      opacity: 0;
+      visibility: hidden;
+      transition: 0.4s;
+
+      &.active-menu-mobile{
+         opacity: 1;
+         visibility: visible;
+         left: 0;
+      }
+
+      li+li{
+         margin-top: 50px;
+      }
+
+      a{
+         font-size: 1.8em;
+         color: $cor--1;
+      }
+   }
+
+   // BG
+
+   .bg{
+      height: auto;
+      padding: 120px 0;
+   }
+
+   .bg--content{
+      flex-direction: column;
+      justify-content: center;
+   }
+
+   .bg-text{
+      position: relative;
+      top: 60px;
+
+      p{
+         font-size: 1.8em;
+      }
+
+      h1{
+         font-size: 2.3em;
+      }
+   }
+
+   .button{
+      position: relative;
+      left: -10px;
+   }
+
+   // FORM
+
+   .form{
+      top: 10rem;
+   }
+
+   // SOBRE
+
+   .sobre--content{
+      justify-content: center;
+   }
+   
+   .sobre-text{
+      max-width: 100%;      
+   
+      p{
+         text-align: justify;
+         margin-left: 20%;
+      }
+
+      button{
+         margin-left: 20%;
+      }
+   }
+
+   .sobre-img::after{
+      height: 85%;
+   }
+
+   // PROJECTS
+
+   .ilusao-de-otica-box{
+      width: 0%;
+   }
+
+   .fundo-ilusao-otica1{
+      display: none;
+   }
+
+   .fundo-ilusao-otica2{
+      display: none;
+   }
+
+   // TECNOLOGIAS
+
+   .tecnologias{
+      height: auto;
+   }
+
+   .tecnologias--flex{
+       
+      h4{
+         top: -52%;
+      } 
+   }
+
+   .icon-tecnologia{      
+      width: 15%;
+      height: auto;
+
+      img{
+         width: 100%;
+         padding: 10px;         
+      }
+   }
+
+   // Whatsapp
+
+   .whatsapp{   
+      a{
+         right: 1%;
+         bottom: 1%;
+      }
+   }
+
+}
+
+// CELULAR
+@media screen and (max-width: 500px){
+   .container--w1{
+      max-width: 320px;
+   }
+
+   .container--w2{
+      max-width: 320px;
+   }
+
+   // MENU MOBILE
+   .menu-mobile{
+      width: 70%;
+
+      a{
+         font-size: 1.3em;
+      }
+   }
+
+   // LOGO
+   .bg-logomarca{
+      display: none;
+   }
+
+   .logo{
+      p{
+         font-size: 1.7em;
+      }
+   }   
+
+   // BG
+   .bg{
+      height: auto;
+   }
+
+   .bg--content{
+      height: auto;
+
+      display: flex;
+      align-items: initial;
+      justify-content: initial;
+      flex-direction: column;
+   }
+
+   .bg-text{
+      top: 40px;
+
+      text-align: center;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      .button{
+         width: 150px;
+      }
+
+      a{
+         padding: 20px 40px!important;
+      }
+
+      i{
+         position: absolute;
+         left: 130px;
+      }
+   }
+
+   // FORMULARIO
+
+   .form{
+      width: 100%;
+   }
+
+   .formulario{
+      width: 100%;
+
+      input{
+         width: 100%;
+      }
+
+      textarea{
+         width: 100%;
+      }
+   }
+
+   // SOBRE
+   
+   .sobre--content{
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .sobre-img{
+      margin-bottom: 50px;
+   }
+
+   .sobre-img::after{
+      height: 100%;
+   }
+
+   .sobre-text{
+      max-width: 100%;
+      text-align: center;
+
+      p{
+         font-size: 1.2em;
+         margin: 0;
+      }
+
+      button{
+         margin-left: 0;
+      }
+   }
+
+   // PROJETOS
+
+   .projetos-grid{
+      grid-gap: 0px;
+      grid-template-columns: 1fr;
+      grid-row-gap: 30px;
+   }   
+
+   // TECNOLOGIAS
+
+   .tecnologias{
+      height: auto;
+   }
+
+   .tecnologias--flex{
+      row-gap: 20px;
+
+      h4{        
+         top: -11%;
+      } 
+   }
+
+   .icon-tecnologia{
+      width: 47%;
+      
+      img{
+         width: 100%;
+      }
+   }
+
+   // FOOTER
+
+   .footer{
+      position: relative;
+      height: auto;
+   }
+
+   .footer-flex{
+      flex-direction: column;
+   }
+
+   .remove{
+      display: none;
+   }
+
+   // Whatsapp
+
+   .whatsapp{   
+      a{
+         right: 2%;
+         bottom: 1.5%;
+
+         width: 40px;
+         height: 40px;
+
+         font-size: 1.5em; 
+      }
+   }
+}

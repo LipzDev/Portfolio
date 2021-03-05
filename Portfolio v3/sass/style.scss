@@ -1,0 +1,632 @@
+@import 'reset';
+@import 'mixin';
+@import 'colors';
+
+// HEADER
+.header{
+   background: $cor--3;
+   padding: 20px 0;
+   // position: fixed;
+   // width: 100%;
+   // z-index: 9999;
+   position: relative;
+}
+
+.header--content{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.menu-desktop ul{
+   display: flex;
+
+   li+li{
+      margin-left: 40px;
+   }
+
+   a{
+     font-size: 1.2em; 
+     color: $cor-fonte-1;
+     transition: 0.4s;
+
+     &:hover{
+      color: $cor--6;
+     }
+   }
+}
+
+// LOGOMARCA
+
+.logo{
+   z-index: 4;
+   
+   p{
+      font-size: 3.0em;
+      font-weight: 600;
+      color: $cor-fonte-1;   
+   }
+}
+
+.bg-logomarca{
+   background: $cor--2;
+   width: 36.6%;
+   min-width: 330px;
+   height: 115px;
+   transform: skew(50deg);
+
+   position: absolute;
+   left: -70px;
+   top: 0;
+   z-index: 2;
+}
+
+@media screen and (min-width: 900px){
+   .icon{
+      display: none;
+   }
+
+   .menu-mobile{
+      display: none;
+   }
+}
+
+// BG
+
+.bg{
+   background-image: url(../img/background/bg-1.jpg);
+   width: 100%;
+   height: 80vh;
+
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   position: relative;
+
+   z-index: 0;
+}
+
+.bg::after{
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+
+   background: $cor-degrade;
+   opacity: 0.9;
+   width: 100%;
+   height: 100%;
+
+   z-index: 1;
+}
+
+.bg--content{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   height: 70vh;
+}
+
+.bg-text{
+   color: $cor-fonte-2;
+   z-index: 2;
+
+   p{
+      font-size: 2.3em;
+      font-weight: 300;
+   }
+
+   h1{
+      font-size: 4.0em;
+      max-width: 400px;
+      font-weight: 600;
+   }
+   
+   .button{
+      margin-top: 50px;
+      margin-left: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+
+      @include button;
+      
+      a{
+         display: block;
+         transform: skew(30deg);
+         color: $cor-fonte-1;
+         padding: 20px 60px;
+         font-weight: 600;
+         font-size: 0.9em;
+
+         position: relative;
+         left: -10px;
+      }
+
+      i{
+         position: absolute;
+         right: 37px;
+         top: 24px;
+         color: $cor-fonte-1;
+      }
+   }
+}
+
+
+
+// FORMULARIO
+
+.form{
+   padding: 40px;
+   overflow: hidden;
+   backdrop-filter: blur(7px);
+   background: $cor-glass;
+   box-shadow: 2px 2px 8px $cor-sombra-7;
+   border-radius: 5px;
+   position: relative;
+   top: 13rem;
+   z-index: 222;
+
+   h2{
+      font-weight: 300;
+      letter-spacing: 2px;
+      color: $cor-fonte-2;
+
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+
+      position: relative;
+      top: -20px;
+
+   }
+}
+
+// FEEDBACK DO FORMULARIO
+.feedback {
+   z-index: 9999;
+   width: 100%;
+
+   text-align: center;
+ 
+   .success p {
+     background-color: rgb(58, 141, 58);
+     @include toast;
+   }
+ 
+   .error p {
+     background-color: rgb(195, 23, 23);
+     @include toast;
+   }   
+ }
+
+//  ---
+
+.formulario{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   width: 350px;   
+
+   input{
+      width: 90%;
+      padding: 20px;
+      font-size: 0.9em;
+      margin-bottom: 20px;
+      background-color: transparent;
+      border: none;
+      border-bottom: 1px solid $cor--2;
+      font-family: 'open sans', sans-serif;
+      color: $cor-fonte-2;
+   }
+
+   ::-webkit-input-placeholder {
+      color: $cor-fonte-3;
+   }
+
+   textarea{
+      width: 90%;
+      margin-top: 20px;
+      padding:  0 20px;
+      height: 80px;
+      font-size: 0.9em;
+      background-color: transparent;
+      border: none;
+      border: 1px solid $cor--2;
+      border-top: none;
+      resize: none;
+      color: $cor-fonte-2;
+      font-family: 'open sans', sans-serif;
+   }
+
+   .buttonForm{
+      @include button;
+      border: 0;  
+      cursor: pointer;
+      margin-top: 40px; 
+      font-size: 0.9em;
+
+      a{
+        display: block;
+        font-weight: 600;
+        transform: skew(30deg);
+        color: $cor-fonte-1; 
+        font-family: 'open sans', sans-serif;
+      } 
+
+      i{
+         margin-left: 7px;
+         position: relative;
+         top: -2px;
+      }
+   }
+}
+
+.formulario{
+   input:focus{
+      border-bottom: 1px solid $cor--7;
+   }
+
+   textarea:focus{
+      border: 1px solid $cor--7;
+      border-top: none;
+   }
+}
+
+// MENU NAVIGATION
+
+.menu-navigation{
+   z-index: 9999!important;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+
+   position: fixed;
+   right: 35px;
+   top: 40%;
+
+   a{
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      border: 0;
+      background: $cor--2; 
+
+      margin-bottom: 40px;
+      position: relative;
+      cursor: pointer;      
+   }
+
+   a::after{
+      content: '';
+      position: absolute;
+      bottom: 2px;
+      left: 5px;
+
+      width: 2px;
+      height: 50px;
+      transition: 0.5s;
+      
+      background: $cor--2; 
+
+      z-index: -1;
+   }
+
+   .actived{
+     background: $cor--2;
+      box-shadow: 2px 2px 8px $cor--2,
+      -2px -2px 12px $cor--2;     
+   } 
+
+   .actived::after{
+      background: $cor--2;
+   }
+
+   a:nth-child(1)::after{
+      display: none;
+   }
+
+}
+
+// SOBRE
+
+.sobre{
+   width: 100%;
+   height: 60vh;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.sobre--content{
+   display: flex;
+   justify-content: space-between;
+}
+
+.sobre-img{
+   position: relative;
+
+   img{
+      border-radius: 5px;
+   }
+}
+
+.sobre-img::after{
+   content: '';
+   position: absolute;
+   background: $cor-degrade2;
+   left: 0;
+   top: 0;
+
+   width: 100%;
+   height: 100%;
+
+   border-radius: 5px;
+}
+
+.sobre-text{
+   max-width: 60%;
+
+   p{
+      font-size: 1.5em;
+      color: $cor-fonte-2;
+      font-weight: 300;
+   }
+
+   button{
+      background: transparent;
+      border: 0;
+      cursor: pointer;
+      margin-top: 40px;
+      letter-spacing: 1px;
+      padding: 20px;
+      color: $cor-fonte-2;
+      border-radius: 5px;
+      @include boxShadowEscuro-2;
+   }   
+}
+
+// PROJETOS
+
+.projetos-background{
+   display: flex;
+}
+
+.projetos-content{
+   background: $cor--5;
+   width: 100%;
+   height: 70vh;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   h3{
+      letter-spacing: 2px;
+      font-weight: 400;
+      font-size: 1.5em;
+      color: $cor-fonte-2;
+      position: relative;
+      top: -40px;
+   }
+}
+
+// QUADRADOS ILUSAO DE OTICA
+
+.ilusao-de-otica-box{
+   width: 28%;
+}
+
+.fundo-ilusao-otica1{
+   height: 50%;
+   background: $cor--1;
+}
+
+.fundo-ilusao-otica2{
+   height: 50%;
+   background: $cor--4;
+}
+
+// FUNDO ABAIXO DAS IMAGENS
+
+.projetos-grid{
+   display: grid;
+
+   grid-gap: 40px;
+   grid-template-columns: 1fr 1fr 1fr;
+}
+
+// EFEITO NAS IMAGENS DO PROJETO
+
+.item-grid-1{
+   border-radius: 5px;
+   overflow: hidden;
+   position: relative;
+   @include boxShadowEscuro-2; 
+
+   img{
+      width: 100%;
+      border-radius: 5px;
+      transition: 0.5s;
+   }
+
+   img:hover{
+      transform: scale(1.1);
+   }
+}
+
+.item-grid-1::after{
+   content: "Preview";
+   font-size: 1.5em;
+   font-weight: 300;
+   color: $cor-fonte-3;
+
+   background: $cor-glass;
+   backdrop-filter: blur(3px);
+   position: absolute;
+   left: 0;
+   top: 0;
+
+   width: 100%;
+   height: 100%;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   left: -100rem;
+   transition: 1s;
+}
+
+.item-grid-1:hover::after{
+   left: 0rem; 
+}
+
+// TECNOLOGIAS
+
+.tecnologias{
+   width: 100%;
+   height: 60vh;
+   background: $cor--4;
+
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   justify-content: center;
+  
+}
+
+.tecnologias--flex{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+   position: relative;
+
+   
+   h4{
+      letter-spacing: 2px;
+      font-weight: 300;
+      font-size: 1.5em;
+      color: $cor-fonte-2;
+      position: absolute;
+      top: -32%;
+   } 
+}
+
+.icon-tecnologia{
+   background: transparent;
+   border: 1px solid $cor-fonte-3;
+   width: 200px;
+   height: 200px;
+   border-radius: 5px;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+// FOOTER
+
+.footer{   
+   width: 100%;
+   height: auto;
+   background:$cor--5;
+   padding: 5rem 0;
+   text-align: center;
+
+   a{
+      color: $cor-fonte-2;
+      &:hover{
+         color: $cor-fonte-1;
+      }
+   }
+}
+
+.footer-flex{
+   display: flex; 
+   justify-content: space-between;
+}
+
+.item-list{
+   padding-bottom: 20px;
+   
+   p{
+      letter-spacing: 2px;
+      font-weight: 300;
+      font-size: 1.5em;
+      text-transform: uppercase;
+      color: $cor-fonte-2;
+      margin-bottom: 35px;
+   }
+
+   img{
+      max-width: 130px;
+      display: flex;
+      padding: 20px;
+      border-radius: 5px;
+      border: 1px solid $cor-fonte-3;
+   }
+
+   h5{
+      letter-spacing: 2px;
+      font-weight: 300;
+      font-size: 1.5em;
+      text-transform: uppercase;
+      color: $cor-fonte-2;
+      margin-bottom: 30px;
+   }
+
+   li+li{
+      margin-top: 15px;
+   }
+}
+
+.creditos{
+   background: $cor--6;
+   width: 100%;
+   padding: 20px 0;
+   text-align: center;
+
+   a{
+      color: $cor-fonte-2;
+      font-size: 0.8em;
+   }
+}
+
+// Whatsapp
+
+.whatsapp{   
+   a{
+      position: fixed;
+      right: 1%;
+      bottom: 2%;
+
+      color: white;
+      font-size: 2.0em;   
+      background: rgb(58, 141, 58);
+
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+
+   i{
+      transform: rotate(0);
+      transition: 0.5s ease-in-out;
+   }   
+
+   &:hover i{
+      transform: rotate(360deg);
+   }
+}
+
+
+@import 'responsive';
