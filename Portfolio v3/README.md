@@ -1,9 +1,8 @@
-## 😎 PORTFÓLIO VERSÃO ATUAL
+## 🏆 PORTFÓLIO
 
  ## Sobre
  
- Mais uma versão do meu portfólio! Fiz algumas mudanças do layout original que fiz no figma!
+ Ainda esta em construção! =)
  
  ###  Portfólio:
- [Link](http://filipe-dev.epizy.com/)
-
+ [Link]()

@@ -6,9 +6,7 @@
 .header{
    background: $cor--3;
    padding: 20px 0;
-   // position: fixed;
-   // width: 100%;
-   // z-index: 9999;
+   z-index: 9999;
    position: relative;
 }
 
@@ -96,7 +94,6 @@
    opacity: 0.9;
    width: 100%;
    height: 100%;
-
    z-index: 1;
 }
 
